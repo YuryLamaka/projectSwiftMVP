@@ -49,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				CBC9BA5E27A07F0800CFCEDE /* CryptoCurrencyViewController.swift */,
-				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
-				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				CBC9BA7327A081BB00CFCEDE /* Presenter.swift */,
+				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
+				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";

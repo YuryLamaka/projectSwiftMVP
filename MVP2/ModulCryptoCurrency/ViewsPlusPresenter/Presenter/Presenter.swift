@@ -9,7 +9,7 @@ import Foundation
 
 class Presenter {
     weak private var viewInputDelegate: ViewInputDelegate?
-    var testsData = CryptoData.testData
+    var testsData = CryptoData.cryptoData
     
     //в презентер передаем экземпляр вью
     func setViewInputDelegate(viewInputDelegate: ViewInputDelegate?) {

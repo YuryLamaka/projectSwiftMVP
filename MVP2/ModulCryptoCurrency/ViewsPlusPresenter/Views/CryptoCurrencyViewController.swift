@@ -54,18 +54,4 @@ extension CryptoCurrencyViewController: ViewInputDelegate {
     
 }
 
-extension CryptoCurrencyViewController: ViewOutputDelegate {
-    func getData() {
-        viewOutputDelegate?.getData()
-    }
-    
-    func saveData() {
-         
-    }
-    
-    func randomData() {
-         
-    }
-    
-    
-}
+

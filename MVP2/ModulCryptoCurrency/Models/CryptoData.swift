@@ -14,7 +14,7 @@ struct CryptoData {
 }
 
 extension CryptoData {
-    static var testData = [CryptoData(name: "Bitcoin", ticker: "BTC", value: 55000),
+    static var cryptoData = [CryptoData(name: "Bitcoin", ticker: "BTC", value: 55000),
     CryptoData(name: "Etherium", ticker: "ETH", value: 35000)
     ]
 }
