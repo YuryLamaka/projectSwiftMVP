@@ -21,14 +21,20 @@ class CryptoCurrencyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewOutputDelegate?.getData()
+       createPresenter()
+    }
+    
+    func createPresenter() {
+        let presenter = Presenter()
+            presenter.setViewInputDelegate(viewInputDelegate: self)
+            self.viewOutputDelegate = presenter
+            viewOutputDelegate?.getData()
+
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
         self.viewOutputDelegate?.randomData()
     }
-    
- 
     
 }
 
