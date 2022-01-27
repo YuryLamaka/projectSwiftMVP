@@ -48,8 +48,8 @@
 		CB50DF6B27A3132E00BA23DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
 				CBC9BA5E27A07F0800CFCEDE /* CryptoCurrencyViewController.swift */,
+				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
 				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
 			);
 			path = Views;
@@ -105,8 +105,8 @@
 		CBC9BA6F27A07F5400CFCEDE /* ViewsPlusPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				CB50DF6B27A3132E00BA23DE /* Views */,
 				CBC9BA7027A07F7600CFCEDE /* Presenter */,
+				CB50DF6B27A3132E00BA23DE /* Views */,
 			);
 			path = ViewsPlusPresenter;
 			sourceTree = "<group>";

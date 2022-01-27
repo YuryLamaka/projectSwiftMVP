@@ -13,23 +13,22 @@ class CryptoCurrencyViewController: UIViewController {
     @IBOutlet weak var tickerLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     
-    private let presenter = Presenter()
     private var testData: [CryptoData] = []
     
     private var count = 0
     
-    weak private var viewOutputDelegate: ViewOutputDelegate?
+     private var viewOutputDelegate: ViewOutputDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.setViewInputDelegate(viewInputDelegate: self)
-        self.viewOutputDelegate = presenter
-        self.presenter.getData()
+        viewOutputDelegate?.getData()
     }
     
     @IBAction func buttonPressed(_ sender: Any) {
         self.viewOutputDelegate?.randomData()
     }
+    
+ 
     
 }
 
@@ -50,6 +49,22 @@ extension CryptoCurrencyViewController: ViewInputDelegate {
         } else {
             print("Sorry((")
         }
+    }
+    
+    
+}
+
+extension CryptoCurrencyViewController: ViewOutputDelegate {
+    func getData() {
+        viewOutputDelegate?.getData()
+    }
+    
+    func saveData() {
+         
+    }
+    
+    func randomData() {
+         
     }
     
     
