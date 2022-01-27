@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CryptoCurrencyViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var tickerLabel: UILabel!
@@ -27,13 +27,13 @@ class ViewController: UIViewController {
         self.presenter.getData()
     }
     
-    @IBAction func buttonPresst(_ sender: Any) {
+    @IBAction func buttonPressed(_ sender: Any) {
         self.viewOutputDelegate?.randomData()
     }
     
 }
 
-extension ViewController: ViewInputDelegate {
+extension CryptoCurrencyViewController: ViewInputDelegate {
     func setupInitialState() {
          displayData(index: count)
     }
@@ -48,7 +48,7 @@ extension ViewController: ViewInputDelegate {
             tickerLabel.text = testData[index].ticker
             valueLabel.text = String(testData[index].value)
         } else {
-            print("Sorry")
+            print("Sorry((")
         }
     }
     

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CBC9BA5B27A07F0800CFCEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9BA5A27A07F0800CFCEDE /* AppDelegate.swift */; };
 		CBC9BA5D27A07F0800CFCEDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9BA5C27A07F0800CFCEDE /* SceneDelegate.swift */; };
-		CBC9BA5F27A07F0800CFCEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9BA5E27A07F0800CFCEDE /* ViewController.swift */; };
+		CBC9BA5F27A07F0800CFCEDE /* CryptoCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9BA5E27A07F0800CFCEDE /* CryptoCurrencyViewController.swift */; };
 		CBC9BA6227A07F0800CFCEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC9BA6027A07F0800CFCEDE /* Main.storyboard */; };
 		CBC9BA6427A07F0C00CFCEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC9BA6327A07F0C00CFCEDE /* Assets.xcassets */; };
 		CBC9BA6727A07F0C00CFCEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC9BA6527A07F0C00CFCEDE /* LaunchScreen.storyboard */; };
@@ -23,7 +23,7 @@
 		CBC9BA5727A07F0800CFCEDE /* MVP2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC9BA5A27A07F0800CFCEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBC9BA5C27A07F0800CFCEDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBC9BA5E27A07F0800CFCEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBC9BA5E27A07F0800CFCEDE /* CryptoCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyViewController.swift; sourceTree = "<group>"; };
 		CBC9BA6127A07F0800CFCEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBC9BA6327A07F0C00CFCEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC9BA6627A07F0C00CFCEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,10 +49,19 @@
 			isa = PBXGroup;
 			children = (
 				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
-				CBC9BA5E27A07F0800CFCEDE /* ViewController.swift */,
+				CBC9BA5E27A07F0800CFCEDE /* CryptoCurrencyViewController.swift */,
 				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CB50DF6C27A3164000BA23DE /* ModulCryptoCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				CBC9BA6F27A07F5400CFCEDE /* ViewsPlusPresenter */,
+				CBC9BA6E27A07F3D00CFCEDE /* Models */,
+			);
+			path = ModulCryptoCurrency;
 			sourceTree = "<group>";
 		};
 		CBC9BA4E27A07F0800CFCEDE = {
@@ -74,8 +83,7 @@
 		CBC9BA5927A07F0800CFCEDE /* MVP2 */ = {
 			isa = PBXGroup;
 			children = (
-				CBC9BA6E27A07F3D00CFCEDE /* Models */,
-				CBC9BA6F27A07F5400CFCEDE /* ViewsPlusPresenter */,
+				CB50DF6C27A3164000BA23DE /* ModulCryptoCurrency */,
 				CBC9BA5A27A07F0800CFCEDE /* AppDelegate.swift */,
 				CBC9BA5C27A07F0800CFCEDE /* SceneDelegate.swift */,
 				CBC9BA6027A07F0800CFCEDE /* Main.storyboard */,
@@ -183,7 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBC9BA7627A082BB00CFCEDE /* ViewInputDelegate.swift in Sources */,
-				CBC9BA5F27A07F0800CFCEDE /* ViewController.swift in Sources */,
+				CBC9BA5F27A07F0800CFCEDE /* CryptoCurrencyViewController.swift in Sources */,
 				CBC9BA7827A088C000CFCEDE /* ViewOutpudDelegate.swift in Sources */,
 				CBC9BA5B27A07F0800CFCEDE /* AppDelegate.swift in Sources */,
 				CBC9BA7227A07FD200CFCEDE /* CryptoData.swift in Sources */,
