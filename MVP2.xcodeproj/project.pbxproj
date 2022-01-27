@@ -45,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB50DF6B27A3132E00BA23DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
+				CBC9BA5E27A07F0800CFCEDE /* ViewController.swift */,
+				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CBC9BA4E27A07F0800CFCEDE = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +74,8 @@
 		CBC9BA5927A07F0800CFCEDE /* MVP2 */ = {
 			isa = PBXGroup;
 			children = (
-				CBC9BA7027A07F7600CFCEDE /* Presenter */,
 				CBC9BA6E27A07F3D00CFCEDE /* Models */,
-				CBC9BA6F27A07F5400CFCEDE /* Views */,
+				CBC9BA6F27A07F5400CFCEDE /* ViewsPlusPresenter */,
 				CBC9BA5A27A07F0800CFCEDE /* AppDelegate.swift */,
 				CBC9BA5C27A07F0800CFCEDE /* SceneDelegate.swift */,
 				CBC9BA6027A07F0800CFCEDE /* Main.storyboard */,
@@ -85,14 +94,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		CBC9BA6F27A07F5400CFCEDE /* Views */ = {
+		CBC9BA6F27A07F5400CFCEDE /* ViewsPlusPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				CBC9BA5E27A07F0800CFCEDE /* ViewController.swift */,
-				CBC9BA7527A082BB00CFCEDE /* ViewInputDelegate.swift */,
-				CBC9BA7727A088C000CFCEDE /* ViewOutpudDelegate.swift */,
+				CB50DF6B27A3132E00BA23DE /* Views */,
+				CBC9BA7027A07F7600CFCEDE /* Presenter */,
 			);
-			path = Views;
+			path = ViewsPlusPresenter;
 			sourceTree = "<group>";
 		};
 		CBC9BA7027A07F7600CFCEDE /* Presenter */ = {
